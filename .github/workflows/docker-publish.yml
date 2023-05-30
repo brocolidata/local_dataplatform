@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
     
   push:
-    # Publish `main` as Docker `latest` image.
     branches:
       - main
     paths:
@@ -13,9 +12,9 @@ on:
 jobs:
 
   push:
-
     runs-on: ubuntu-latest
-
+    env:
+      docker-directory: ${{ github.workspace }}/docker
     steps:
       - uses: actions/checkout@v2
         
@@ -26,13 +25,9 @@ jobs:
           password: ${{ secrets.BROCOLI_DOCKER_TOKEN }}
 
       - name: Build image
-        run: |
-          docker compose \
-            -f docker/docker-compose.yml \
-          build
+        working-directory: ${{ env.docker-directory }}
+        run: docker compose build
 
       - name: Push image to Docker Hub Container Registry
-        run: |
-          docker compose \
-            -f docker_build/docker-compose.yml \
-          push
+        working-directory: ${{ env.docker-directory }}
+        run: docker compose push
