@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  dataplatform_lab:
+    image: brocolidata/dataplatform_lab
+    build: .
+    container_name: dataplatform_lab
+    environment:
+      DBT_PROFILES_DIR: "/${ROOT_DIR}/${LAB_DIR}/dbt/profiles"
+      DBT_PROJECT_DIR: "/${ROOT_DIR}/${LAB_DIR}/dbt/dataplatform"
+      DUCKDB_DATA: "/${ROOT_DIR}/${LAB_DIR}/duckdb_data"
+      DWH_DATA: "/${ROOT_DIR}/${LAB_DIR}/dwh_data"
+    volumes:
+      - ../:/${ROOT_DIR}
+    ports:
+      - 5001:5000
+    working_dir: /${ROOT_DIR}/${LAB_DIR}
+    stdin_open: true
+    tty: true

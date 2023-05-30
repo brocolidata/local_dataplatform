@@ -1,0 +1,21 @@
+{
+  "name": "Data Platform Lab",
+  "dockerComposeFile": "../docker/docker-compose.yml",
+  "service": "dataplatform_lab",
+  "workspaceFolder": "/dataplatform/lab",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "innoverio.vscode-dbt-power-user",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "yy0931.vscode-sqlite3-editor"
+      ],
+      "settings": {
+        "files.associations": {
+          "*.sql": "jinja-sql"
+        }
+      }
+    }
+  }
+}

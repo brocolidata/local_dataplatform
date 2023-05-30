@@ -1,0 +1,41 @@
+name: Push Docker Image
+
+on:
+  workflow_dispatch:
+    
+  push:
+    # Publish `main` as Docker `latest` image.
+    branches:
+      - main
+    paths:
+    - 'docker/**'
+
+jobs:
+
+  push:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build image
+        run: |
+          docker compose \
+            -f docker/docker-compose.yml \
+          build
+
+      - name: Log into Docker Hub Container Registry
+        env: 
+          docker_login: ${{ secrets.BROCOLI_DOCKER_USERNAME }}
+          docker_password: ${{ secrets.BROCOLI_DOCKER_PASSWORD }} 
+        run: |
+          docker login \
+            -u $docker_login \
+            --password $docker_password
+
+      - name: Push image to Docker Hub Container Registry
+        run: |
+          docker compose \
+            -f docker_build/docker-compose.yml \
+          push
