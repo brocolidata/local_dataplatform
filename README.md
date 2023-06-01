@@ -4,7 +4,7 @@ A Data Platform in a Development Container, batteries-included.
 ![Data Platform Lab](data_platform_lab.jpg)
 
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/brocolidata/dataplatform_lab)
-[![Open in Codespace](https://img.shields.io/static/v1?label=Codespace&message=Open&color=blue&logo=github)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/brocolidata/dataplatform_lab)
+[![Open in Codespace](https://img.shields.io/static/v1?label=Codespace&message=Open&color=blue&logo=github)](https://codespaces.new/brocolidata/dataplatform_lab)
 [![Push Docker Image](https://github.com/brocolidata/dataplatform_lab/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/brocolidata/dataplatform_lab/actions/workflows/docker-publish.yml)
 
 
