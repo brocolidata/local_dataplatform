@@ -3,8 +3,8 @@ A Data Platform in a Development Container, batteries-included.
 
 ![Data Platform Lab](data_platform_lab.jpg)
 
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/brocolidata/dataplatform_lab)
-[![Open in Codespace](https://img.shields.io/static/v1?label=Codespace&message=Open&color=blue&logo=github)](https://codespaces.new/brocolidata/dataplatform_lab)
+[![Create Repository from template](https://img.shields.io/static/v1?label=GitHub&message=Create%20Repository&color=blue&logo=github)](https://github.com/brocolidata/dataplatform_lab/generate)
+[![Open in Codespace](https://img.shields.io/static/v1?label=Codespace&message=Open&color=blue&logo=github)](https://github.com/codespaces/new?template_repository=brocolidata/dataplatform_lab)
 [![Push Docker Image](https://github.com/brocolidata/dataplatform_lab/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/brocolidata/dataplatform_lab/actions/workflows/docker-publish.yml)
 
 
@@ -17,13 +17,20 @@ A one-click Data Platform with :
 
 ### Local
 
-Once you installed the tools described in [Prerequisites for local development](#prerequisites-for-local-development), just click on this badge [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/brocolidata/dataplatform_lab) and wait while Docker is pulling the image, building the dev container and installing VSCode extensions.
+*Make sure you meet all [Prerequisites for local development](#prerequisites-for-local-development)* 
+1. Click on this badge [![Create Repository from template](https://img.shields.io/static/v1?label=GitHub&message=Create%20Repository&color=blue&logo=github)](https://github.com/brocolidata/dataplatform_lab/generate) to create a repository from this template
+2. Clone it and open in Visual Studio Code
+3. When this popup appears, click on **Reopen in Container** 
+<img src="https://code.visualstudio.com/assets/docs/devcontainers/create-dev-container/dev-container-reopen-prompt.png" height=80, width=300 style="display: block; left-margin: 50"  />
+
+*Tip* : if the popup does not appear, look for this button on the bottom left corner (green button on the image) and select **Reopen in Container**
+<img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/remote-dev-status-bar.png" height=40, width=100 style="display: block; left-margin: 100" />
 
 
 ### GitHub Codespace
-Click on this badge [![Open in Codespace](https://img.shields.io/static/v1?label=Codespace&message=Open&color=blue&logo=github)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/brocolidata/dataplatform_lab) and wait while Docker is pulling the image, building the dev container and installing VSCode extensions.
+Click on this badge [![Open in Codespace](https://img.shields.io/static/v1?label=Codespace&message=Open&color=blue&logo=github)](https://github.com/codespaces/new?template_repository=brocolidata/dataplatform_lab) and wait while Docker is pulling the image, building the dev container and installing VSCode extensions. 
 
 
 ## Prerequisites for local development
 - Docker (started) and Docker Compose (just install [Docker Desktop](https://www.docker.com/products/docker-desktop/) if you are on laptop).
-- Install [Visual Studio Code](https://code.visualstudio.com/) + the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
+- [Visual Studio Code](https://code.visualstudio.com/) + the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
