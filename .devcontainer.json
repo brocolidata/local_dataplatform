@@ -7,13 +7,15 @@
     "--env-file",".env",
     "--name", "dataplatform_lab"
   ],
+  
   "remoteEnv": {
     "DBT_PROFILES_DIR": "${containerWorkspaceFolder}/dbt/profiles",
     "DBT_PROJECT_DIR": "${containerWorkspaceFolder}/dbt/dataplatform",
     "DUCKDB_DATA": "${containerWorkspaceFolder}/duckdb_data",
     "DWH_DATA": "${containerWorkspaceFolder}/dwh_data"
   },
-  "workspaceFolder": "/workspaces/dataplatform_lab/lab",
+  "workspaceMount": "source=${localWorkspaceFolder}/,target=/dataplatform_lab,type=bind",
+  "workspaceFolder": "/dataplatform_lab/lab",
   "customizations": {
     "vscode": {
       "extensions": [
