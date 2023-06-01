@@ -2,6 +2,9 @@
   "name": "Data Platform Lab",
   "dockerComposeFile": "../docker/docker-compose.yml",
   "service": "dataplatform_lab",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/dataplatform,type=bind"
+  ],
   "workspaceFolder": "/dataplatform/lab",
   "shutdownAction": "stopCompose",
   "customizations": {
