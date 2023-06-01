@@ -23,8 +23,8 @@ A one-click Data Platform with :
 3. When this popup appears, click on **Reopen in Container** 
 <img src="https://code.visualstudio.com/assets/docs/devcontainers/create-dev-container/dev-container-reopen-prompt.png" height=80, width=300 style="display: block; left-margin: 50"  />
 
-*Tip* : if the popup does not appear, look for this button on the bottom left corner (green button on the image) and select **Reopen in Container**
-<img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/remote-dev-status-bar.png" height=40, width=100 style="display: block; left-margin: 100" />
+    *Tip : if the popup does not appear, look for this button on the bottom left corner (green button on the image) and select **Reopen in Container*** 
+<img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/remote-dev-status-bar.png" height=40, width=100 style="display: block; left-margin: 50" />
 
 
 ### GitHub Codespace
