@@ -21,10 +21,12 @@ A one-click Data Platform with :
 1. Click on this badge [![Create Repository from template](https://img.shields.io/static/v1?label=GitHub&message=Create%20Repository&color=blue&logo=github)](https://github.com/brocolidata/dataplatform_lab/generate) to create a repository from this template
 2. Clone it and open in Visual Studio Code
 3. When this popup appears, click on **Reopen in Container** 
-<img src="https://code.visualstudio.com/assets/docs/devcontainers/create-dev-container/dev-container-reopen-prompt.png" height=80, width=300 style="display: block; left-margin: 50"  />
+   
+   <img src="https://code.visualstudio.com/assets/docs/devcontainers/create-dev-container/dev-container-reopen-prompt.png" height=80, width=300 style="display: block; left-margin: 50" />
 
-    *Tip : if the popup does not appear, look for this button on the bottom left corner (green button on the image) and select **Reopen in Container*** 
-<img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/remote-dev-status-bar.png" height=40, width=100 style="display: block; left-margin: 50" />
+   *If the popup does not appear, look for this button on the bottom left corner (green button on the image) and select **Reopen in Container***
+
+   <img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/remote-dev-status-bar.png" height=60, width=150 style="display: block; left-margin: 50" />
 
 
 ### GitHub Codespace
