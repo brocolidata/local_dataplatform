@@ -7,14 +7,12 @@ on:
     branches:
       - main
     paths:
-    - 'docker/**'
+    - 'Dockerfile'
 
 jobs:
 
   push:
     runs-on: ubuntu-latest
-    env:
-      docker-directory: ${{ github.workspace }}/docker
     steps:
       - uses: actions/checkout@v2
         
@@ -24,10 +22,15 @@ jobs:
           username: ${{ secrets.BROCOLI_DOCKER_USERNAME }}
           password: ${{ secrets.BROCOLI_DOCKER_TOKEN }}
 
-      - name: Build image
-        working-directory: ${{ env.docker-directory }}
-        run: docker compose build
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          images: brocolidata/dataplatform_lab
 
-      - name: Push image to Docker Hub Container Registry
-        working-directory: ${{ env.docker-directory }}
-        run: docker compose push
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          labels: ${{ steps.meta.outputs.labels }}
