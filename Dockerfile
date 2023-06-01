@@ -33,3 +33,9 @@ RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
 ENV PYTHONPATH "${PYTHONPATH}:/sport_odds/lab/src/src"
+
+## Setup lab tree
+
+# WORKDIR /lab
+
+# COPY lab .
