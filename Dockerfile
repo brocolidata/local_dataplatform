@@ -14,7 +14,8 @@ RUN apt-get -y update \
         python3.10-venv \     
         git \
         jq \
-        zsh
+        zsh \
+        unrar
 
 ENV NODE_VERSION=14.18.2
 RUN apt install -y curl
