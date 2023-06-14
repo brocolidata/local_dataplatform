@@ -1,0 +1,51 @@
+models:
+  - name: raw_financial_dataset_stg
+    description: "table of product sales"
+    columns:
+      - name: segment
+        description: ""
+
+      - name: country
+        description: ""
+
+      - name: product
+        description: ""
+
+      - name: discount_band
+        description: ""
+
+      - name: units_sold
+        description: ""
+
+      - name: manufacturing_price
+        description: ""
+
+      - name: sale_price
+        description: ""
+
+      - name: gross_sales
+        description: ""
+
+      - name: discounts
+        description: ""
+
+      - name: sales
+        description: ""
+
+      - name: cost_of_goods_sold
+        description: ""
+
+      - name: profit
+        description: ""
+
+      - name: sales_date
+        description: ""
+
+      - name: month_number
+        description: ""
+
+      - name: month_name
+        description: ""
+
+      - name: year
+        description: ""

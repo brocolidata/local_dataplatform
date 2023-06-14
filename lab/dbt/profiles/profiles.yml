@@ -6,5 +6,5 @@ dataplatform_local:
       path: "{{ env_var('DUCKDB_DATA') }}/dbt.duckdb"
       database: dbt
       extensions:
-        - httpfs
+        # - httpfs
         - parquet
