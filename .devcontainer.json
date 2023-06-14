@@ -1,8 +1,6 @@
 {
   "name": "Data Platform Lab",
-  "build":{
-    "dockerfile":"./Dockerfile"
-  },
+  "image": "brocolidata/dataplatform_lab",
   "runArgs": [
     "--env-file",".env",
     "--name", "dataplatform_lab"
